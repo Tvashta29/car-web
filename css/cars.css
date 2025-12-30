@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 4rem 0 2rem ;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff3333;
+}
+header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header nav .logo{
+    width: 150px;
+}
+header nav .menu{
+    display: flex;
+    align-items: center;
+}
+nav .menu a{
+    color: black;
+    margin-left: 30px;
+    position: relative;
+}
+nav .menu a::after{
+    content: '';
+    position: absolute; 
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+nav .menu a:hover::after{
+    width: 100%;
+}
+.heading{
+    margin: 20px;
+    text-align: center;
+}
+.heading span{
+    font-weight: 500;
+    color: red;
+}    
+.heading p{
+    font-size: 0.938rem;
+    font-weight: 300;
+}
+.car-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.car-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.car-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.car-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5;
+}
+.car-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight:400 ;
+    font-size: 1rem;
+    background: white ;
+    padding: 8px;
+    border-radius: 00.5rem;
+}
+.car-container .box:hover h2{
+    background: red;
+    color: black;
+}
